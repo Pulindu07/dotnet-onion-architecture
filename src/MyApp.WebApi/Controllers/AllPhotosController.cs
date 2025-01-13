@@ -6,7 +6,7 @@ using MyApp.Application.Models.Responses;
 namespace MyApp.WebApi.Controllers
 {
     [ApiController]
-    [Route("api/getPhotos")]
+    [Route("api/")]
     public class AllPhotosController : ControllerBase
     {
         private readonly IPhotoService _photoService;
@@ -16,11 +16,17 @@ namespace MyApp.WebApi.Controllers
             _photoService = photoService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<GetAllPhotosRes>> CreateUser([FromQuery] int page =1, [FromQuery] int pageSize = 10)
+        [HttpGet ("getPhotos")]
+        public async Task<ActionResult<GetAllPhotosRes>> GetAllPhotos([FromQuery] int page =1, [FromQuery] int pageSize = 10)
         {
             var request = new GetAllPhotosReq { Page = page, PageSize = pageSize };
             var result = await _photoService.GetAllPhotos(request);
+            return Ok(result);
+        }
+        [HttpPut("likePhoto")]
+        public async Task<ActionResult<LikePhotoRes>> LikePhoto(LikePhotoReq request)
+        {
+            var result = await _photoService.LikePhoto(request);
             return Ok(result);
         }
     }

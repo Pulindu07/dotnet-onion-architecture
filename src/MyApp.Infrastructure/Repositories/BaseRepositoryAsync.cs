@@ -60,5 +60,12 @@ namespace MyApp.Infrastructure.Repositories
         {
             return SpecificationEvaluator<T>.GetQuery(_dbContext.Set<T>().AsQueryable(), spec);
         }
+
+        public async Task<T> UpdateAsync(T entity)
+        {
+            _dbContext.Set<T>().Update(entity);
+            await _dbContext.SaveChangesAsync();
+            return entity;
+        }
     }
 }

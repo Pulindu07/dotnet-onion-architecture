@@ -1,5 +1,6 @@
 using MyApp.Domain.Core.Models;
 using MyApp.Domain.Core.Specifications;
+using MyApp.Domain.Entities;
 
 namespace MyApp.Domain.Core.Repositories
 {
@@ -13,5 +14,6 @@ namespace MyApp.Domain.Core.Repositories
         void Update(T entity);
         void Delete(T entity);
         Task<int> CountAsync(ISpecification<T> spec);
+        Task<T> UpdateAsync(T entity);
     }
 }
