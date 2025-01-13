@@ -13,7 +13,7 @@ namespace MyApp.Infrastructure
         public static void ConfigureInfrastructure(this IServiceCollection services)
         {
             services.AddDbContext<MyAppDbContext>(options =>
-                options.UseSqlServer("name=ConnectionStrings:MyAppDatabase",
+                options.UseNpgsql("name=ConnectionStrings:DefaultConnection",
                 x => x.MigrationsAssembly("MyApp.Infrastructure")));
 
             services.AddScoped(typeof(IBaseRepositoryAsync<>), typeof(BaseRepositoryAsync<>));
@@ -21,6 +21,7 @@ namespace MyApp.Infrastructure
 
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ILoggerService, LoggerService>();
+            services.AddScoped<IPhotos, Photos>();
         }
 
         public static void MigrateDatabase(this IServiceProvider serviceProvider)

@@ -1,0 +1,70 @@
+2025-01-13 16:07:17.9524 Info Message Template Auto Format enabled
+2025-01-13 16:07:17.9881 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:07:18.0009 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:07:18.0313 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:10:09.5105 Info Message Template Auto Format enabled
+2025-01-13 16:10:09.5373 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:10:09.5509 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:10:09.5878 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:13:28.6026 Info Message Template Auto Format enabled
+2025-01-13 16:13:28.6343 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:13:28.6480 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:13:28.6817 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:14:39.5107 Info Message Template Auto Format enabled
+2025-01-13 16:14:39.5414 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:14:39.5555 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:14:39.5968 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:25:37.1612 Info Message Template Auto Format enabled
+2025-01-13 16:25:37.1977 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:25:37.2107 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:25:37.2446 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:48:44.4890 Info Message Template Auto Format enabled
+2025-01-13 16:48:44.5259 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:48:44.5396 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:48:44.5750 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:49:58.2248 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:49:58.2260 Info Message Template Auto Format enabled
+2025-01-13 16:49:58.2280 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:49:58.2291 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:49:58.2291 Info Closing old configuration.
+2025-01-13 16:49:58.2679 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:02.6929 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:02.6929 Info Message Template Auto Format enabled
+2025-01-13 16:50:02.6929 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:50:02.6958 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:50:02.6958 Info Closing old configuration.
+2025-01-13 16:50:02.7378 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:16.6539 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:16.6552 Info Message Template Auto Format enabled
+2025-01-13 16:50:16.6555 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:50:16.6568 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:50:16.6568 Info Closing old configuration.
+2025-01-13 16:50:16.7033 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:19.5028 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:19.5028 Info Message Template Auto Format enabled
+2025-01-13 16:50:19.5028 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:50:19.5033 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:50:19.5033 Info Closing old configuration.
+2025-01-13 16:50:19.5407 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:28.4559 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:50:28.4579 Info Message Template Auto Format enabled
+2025-01-13 16:50:28.4579 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:50:28.4830 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:50:28.4841 Info Closing old configuration.
+2025-01-13 16:50:28.5297 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:53:55.5176 Info Message Template Auto Format enabled
+2025-01-13 16:53:55.5519 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:53:55.5663 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:53:55.6085 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:54:24.0314 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:54:24.0323 Info Message Template Auto Format enabled
+2025-01-13 16:54:24.0330 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:54:24.0355 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:54:24.0355 Info Closing old configuration.
+2025-01-13 16:54:24.0817 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:57:27.9442 Info Loading NLog config from XML file: /Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
+2025-01-13 16:57:27.9466 Info Message Template Auto Format enabled
+2025-01-13 16:57:27.9466 Info Loading assembly: NLog.Web.AspNetCore
+2025-01-13 16:57:27.9491 Info Adding target FileTarget(Name=ownFile-web)
+2025-01-13 16:57:27.9491 Info Closing old configuration.
+2025-01-13 16:57:27.9927 Info Validating config: TargetNames=ownFile-web, ConfigItems=30, FilePath=/Users/pulindu/Pulindu/SPA/be/dotnet-onion-architecture/src/MyApp.WebApi/bin/Debug/net8.0/nlog.config
