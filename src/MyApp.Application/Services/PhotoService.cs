@@ -22,13 +22,14 @@ namespace MyApp.Application.Services
 
         public async Task<GetAllPhotosRes> GetAllPhotos(GetAllPhotosReq req)
         {
-            var photoSpec = PhotoSpecifications.GetAllPhotosSpec(req.Page, req.PageSize);
+            var photoSpec = PhotoSpecifications.GetPaginatedPhotosSpec(req.Page, req.PageSize);
+            var allPhotoSpec = PhotoSpecifications.GetAllPhotosSpec();
         
         // Get paginated results
         var photos = await _photos.Repository<Photo>().ListAsync(photoSpec);
         
         // Get total count for pagination
-        var totalCount = await _photos.Repository<Photo>().CountAsync(photoSpec);
+        var totalCount = await _photos.Repository<Photo>().CountAsync(allPhotoSpec);
         
         // Calculate total pages
         var totalPages = (int)Math.Ceiling(totalCount / (double)req.PageSize);
