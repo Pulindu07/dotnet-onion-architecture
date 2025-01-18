@@ -11,7 +11,7 @@ var appSettings = new ConfigurationBuilder()
 
 builder.Services.ConfigureApplication();
 
-builder.Services.ConfigureInfrastructure();
+builder.Services.ConfigureInfrastructure(builder.Configuration);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

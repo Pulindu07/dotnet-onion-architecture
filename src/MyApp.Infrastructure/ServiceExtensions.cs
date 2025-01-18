@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration; // Add this for IConfiguration
 using Microsoft.Extensions.DependencyInjection;
 using MyApp.Application.Core.Services;
 using MyApp.Domain.Core.Repositories;
@@ -10,10 +11,15 @@ namespace MyApp.Infrastructure
 {
     public static class ServiceExtensions
     {
-        public static void ConfigureInfrastructure(this IServiceCollection services)
-        {
+
+        public static void ConfigureInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        {            
+            // Retrieve the connection string from environment variables or appsettings
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION") 
+                                    ?? configuration.GetConnectionString("DefaultConnection");
+
             services.AddDbContext<MyAppDbContext>(options =>
-                options.UseNpgsql("name=ConnectionStrings:DefaultConnection",
+                options.UseNpgsql(connectionString, // Use the correct connection string here
                 x => x.MigrationsAssembly("MyApp.Infrastructure")));
 
             services.AddScoped(typeof(IBaseRepositoryAsync<>), typeof(BaseRepositoryAsync<>));
