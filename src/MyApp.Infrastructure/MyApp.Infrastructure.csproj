@@ -12,6 +12,11 @@
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.4" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="../../certificates/DigiCertGlobalRootCA.crt.pem">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+</ItemGroup>
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
