@@ -9,6 +9,7 @@ namespace MyApp.Application
         public static void ConfigureApplication(this IServiceCollection services)
         {
             services.AddScoped<IPhotoService, PhotoService>();
+            services.AddScoped<IChatService, ChatService>();
         }
     }
 }

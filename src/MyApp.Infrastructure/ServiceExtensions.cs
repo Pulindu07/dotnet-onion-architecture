@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration; // Add this for IConfiguration
 using Microsoft.Extensions.DependencyInjection;
 using MyApp.Application.Core.Services;
+using MyApp.Application.Interfaces;
+using MyApp.Application.Services;
 using MyApp.Domain.Core.Repositories;
 using MyApp.Infrastructure.Data;
 using MyApp.Infrastructure.Repositories;
@@ -28,6 +30,18 @@ namespace MyApp.Infrastructure
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ILoggerService, LoggerService>();
             services.AddScoped<IPhotos, Photos>();
+
+            services.AddSignalR();
+            services.AddTransient<IChatService, ChatService>();
+
+            var key = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") 
+                                    ?? configuration["OpenAI:ApiKey"];
+            
+            services.AddHttpClient("OpenAI", client =>
+            {
+                client.BaseAddress = new Uri("https://api.openai.com/v1/");
+                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {key}");
+            });
         }
 
         public static void MigrateDatabase(this IServiceProvider serviceProvider)
