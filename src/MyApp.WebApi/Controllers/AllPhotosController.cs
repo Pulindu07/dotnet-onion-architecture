@@ -29,5 +29,13 @@ namespace MyApp.WebApi.Controllers
             var result = await _photoService.LikePhoto(request);
             return Ok(result);
         }
+
+        [HttpGet ("dummy")]
+        public String GetDummy([FromQuery] int page =1, [FromQuery] int pageSize = 10)
+        {
+            var key = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY"); 
+            return "Hi--->"+key;
+        }
+        
     }
 }
