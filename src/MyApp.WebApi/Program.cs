@@ -1,5 +1,6 @@
 using MyApp.Application;
 using MyApp.Infrastructure;
+using MyApp.Infrastructure.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.ConfigureInfrastructure(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSignalR();
+builder.Services.AddHttpClient();
+
 
 builder.Services.AddCors(options =>
 {
@@ -33,7 +37,7 @@ using (var scope = app.Services.CreateScope())
 {
     scope.ServiceProvider.MigrateDatabase();
 }
-
+app.MapHub<ChatHub>("/chat-bot");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
