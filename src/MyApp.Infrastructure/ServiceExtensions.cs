@@ -41,7 +41,7 @@ namespace MyApp.Infrastructure
                 throw new InvalidOperationException("OpenAI API key not found in environment variables or configuration");
             }
 
-            services.AddHttpClient("OpenAI", client => 
+            services.AddHttpClient("Open_AI", client => 
             {
                 client.BaseAddress = new Uri("https://api.openai.com/v1/");
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);

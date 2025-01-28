@@ -24,8 +24,7 @@ namespace MyApp.Application.Services
 
             try 
             {
-                var client = _httpClientFactory.CreateClient("OpenAI");
-                
+                var client = _httpClientFactory.CreateClient("Open_AI");
 
                 var requestContent = new
                 {
