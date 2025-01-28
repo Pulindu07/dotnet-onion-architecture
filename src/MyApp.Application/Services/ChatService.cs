@@ -37,7 +37,7 @@ namespace MyApp.Application.Services
                     }
                 };
 
-                var response = await client.PostAsJsonAsync("https://api.openai.com/v1/chat/completions", requestContent);
+                var response = await client.PostAsJsonAsync("chat/completions", requestContent);
                 
                 response.EnsureSuccessStatusCode(); // Throws exception for non-success status codes
 

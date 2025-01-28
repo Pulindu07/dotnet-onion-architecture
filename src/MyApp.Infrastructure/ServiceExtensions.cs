@@ -40,7 +40,7 @@ namespace MyApp.Infrastructure
             services.AddHttpClient("OpenAI", client =>
             {
                 client.BaseAddress = new Uri("https://api.openai.com/v1/");
-                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {key}");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
             });
         }
 
