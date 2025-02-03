@@ -9,7 +9,7 @@ namespace MyApp.Domain.Specifications
         public static BaseSpecification<Photo> GetPaginatedPhotosSpec( int page, int pageSize)
         {
             var spec = new BaseSpecification<Photo>(x => x.PrevUrl != null);
-            spec.ApplyOrderBy(x=>x.Id);
+            spec.ApplyOrderByDescending(x=>x.Id);
             
             // Apply pagination
             spec.ApplyPaging((page - 1) * pageSize, pageSize);
