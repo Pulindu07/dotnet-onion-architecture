@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Headers;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MyApp.Application.Interfaces;
 using MyApp.Application.Models.Requests;
 using MyApp.Application.Models.Responses;
@@ -33,20 +32,5 @@ namespace MyApp.WebApi.Controllers
             return Ok(result);
         }
 
-        [HttpGet("test-openai")]
-        public async Task<IActionResult> TestOpenAI()
-        {
-            var key = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY")
-                            ?? _configuration["OpenAI:ApiKey"];
-
-            var httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", key);
-
-            var response = await httpClient.GetAsync("https://api.openai.com/v1/models");
-
-            var result = await response.Content.ReadAsStringAsync();
-
-            return Ok(new { Status = response.StatusCode, Response = result });
-        }
     }
 }
