@@ -31,21 +31,21 @@ namespace MyApp.Infrastructure
             services.AddScoped<ILoggerService, LoggerService>();
             services.AddScoped<IPhotos, Photos>();
 
-            services.AddSignalR();
-            services.AddTransient<IChatService, ChatService>();
+            // services.AddSignalR();
+            // services.AddTransient<IChatService, ChatService>();
 
-            var key = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") 
-                ?? configuration["OpenAI:ApiKey"];
+            // var key = Environment.GetEnvironmentVariable("OPEN_AI_API_KEY") 
+            //     ?? configuration["OpenAI:ApiKey"];
     
-            if (string.IsNullOrEmpty(key)){
-                throw new InvalidOperationException("OpenAI API key not found in environment variables or configuration");
-            }
+            // if (string.IsNullOrEmpty(key)){
+            //     throw new InvalidOperationException("OpenAI API key not found in environment variables or configuration");
+            // }
 
-            services.AddHttpClient("Open_AI", client => 
-            {
-                client.BaseAddress = new Uri("https://api.openai.com/v1/");
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
-            });
+            // services.AddHttpClient("Open_AI", client => 
+            // {
+            //     client.BaseAddress = new Uri("https://api.openai.com/v1/");
+            //     client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
+            // });
         }
 
         public static void MigrateDatabase(this IServiceProvider serviceProvider)
